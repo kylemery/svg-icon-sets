@@ -10,8 +10,31 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: 'Overpass', sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  color: white;
+}
+
+section {
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
+.card-1 {
+  border-right: 2px white;
+}
+
+svg {
+  color: #000;
 }
