@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: 'Overpass', sans-serif;
+  font-family: Overpass, sans-serif;
 }
 
 *, *::before, *::after {
@@ -32,11 +32,11 @@ h1 {
 }
 
 .space-bubbles {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 3px solid rgba(255, 255, 255, .4);
 }
 
 .super-domes {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 3px solid rgba(255, 255, 255, .4);
 }
 
 svg {
@@ -45,28 +45,32 @@ svg {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
-.card-button {
+.btn {
   display: inline-block;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 4px
+  border: 3px solid rgba(255, 255, 255, .6);
+  border-radius: 4px;
+  text-align: left;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, .6);
+  color: #ff9500;
 }
 
 p {
   font-style: normal;
+  text-align: left;
 }
 
+h2 {
+  text-align: left;
+}
+
+
 @media only screen and (min-width: 38em) {
-
-  h2 {
-    text-align: left;
-  }
-
-  p {
-    text-align: left;
-  }
 
   .card-button {
     text-align: left;
@@ -74,12 +78,22 @@ p {
 
   .space-bubbles {
     border-bottom: none;
-    border-right: 2px solid rgba(255, 255, 255, 0.4)
+    border-right: 3px solid rgba(255, 255, 255, .4);
   }
 
   .super-domes {
     border-bottom: none;
-    border-right: 2px solid rgba(255, 255, 255, 0.4)
+    border-right: 3px solid rgba(255, 255, 255, .4);
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .btn {
+    display: inline-block;
+    border: 5px solid rgba(255, 255, 255, .4);
+    border-radius: 5px;
   }
 
 }
