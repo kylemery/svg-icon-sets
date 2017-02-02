@@ -31,10 +31,55 @@ h1 {
   color: white;
 }
 
-.card-1 {
-  border-right: 2px white;
+.space-bubbles {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.super-domes {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 svg {
-  color: #000;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-button {
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px
+}
+
+p {
+  font-style: normal;
+}
+
+@media only screen and (min-width: 38em) {
+
+  h2 {
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .card-button {
+    text-align: left;
+  }
+
+  .space-bubbles {
+    border-bottom: none;
+    border-right: 2px solid rgba(255, 255, 255, 0.4)
+  }
+
+  .super-domes {
+    border-bottom: none;
+    border-right: 2px solid rgba(255, 255, 255, 0.4)
+  }
+
 }
